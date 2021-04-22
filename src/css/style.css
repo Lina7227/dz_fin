@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+.wrapper {
+  margin: 0 auto; }
+  .wrapper .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 56px;
+    margin-left: 191px;
+    margin-right: 191px;
+    margin-bottom: 10px; }

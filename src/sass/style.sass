@@ -1,0 +1,34 @@
+@import _var.sass
+
+.wrapper
+    margin: 0 auto
+    .header 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100px
+        margin-top: 56px 
+        margin-left: 191px
+        margin-right: 191px
+        margin-bottom: 10px
+       .logo 
+            background-image: url("../img/logo.svg")
+            height: 41px
+            width: 160px
+            background-repeat: no-repeat
+            background-size: contain
+        .nav 
+            display: flex
+            width: 45%
+            justify-content: space-around
+            .nav__Link 
+                font-size: 18px
+                color: $gray_color
+                text-decoration: none
+                font-weight: 300
+                transition: all 0.5s
+            .nav__Link.hover 
+                color: $dark_color
+                font-weight: 700
+        
+
