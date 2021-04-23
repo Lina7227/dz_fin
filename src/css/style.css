@@ -7,6 +7,71 @@
     align-items: center;
     height: 100px;
     margin-top: 56px;
-    margin-left: 191px;
-    margin-right: 191px;
-    margin-bottom: 10px; }
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-bottom: 10px;
+    font-family: "Mulish", sans-serif; }
+    .wrapper .header .logo {
+      background-image: url("../img/logo.svg");
+      height: 41px;
+      width: 160px;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .wrapper .header .nav {
+      display: flex;
+      width: 55%;
+      justify-content: space-around; }
+      .wrapper .header .nav .nav__Link {
+        font-size: 18px;
+        color: #7D7987;
+        text-decoration: none;
+        font-weight: 300;
+        transition: all 0.5s; }
+      .wrapper .header .nav .nav__Link:hover {
+        color: #1F1534;
+        font-weight: 700; }
+  .wrapper .promo {
+    height: 580px;
+    margin: 10px 160px 10px 0;
+    background-image: url("../img/promo_1.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 550px 500px;
+    font-family: "Mulish", sans-serif; }
+    .wrapper .promo .img {
+      background-image: url("../img/kyb.svg");
+      width: 90px;
+      height: 115px;
+      background-position: left; }
+    .wrapper .promo .promo_wrapper {
+      color: white;
+      width: 43%;
+      margin-left: 190px; }
+      .wrapper .promo .promo_wrapper .promo_wrapper__title {
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 56px;
+        color: #000; }
+      .wrapper .promo .promo_wrapper .promo_wrapper__text {
+        font-size: 21px;
+        letter-spacing: 0.6px;
+        font-weight: 300;
+        margin-bottom: 45px;
+        line-height: 32px;
+        color: #7D7987; }
+      .wrapper .promo .promo_wrapper .promo_wrapper__btn {
+        color: #458FF6;
+        font-size: 18px;
+        width: 200px;
+        height: 56px;
+        background-color: #ffffff;
+        border: 1px solid #458FF6;
+        letter-spacing: 0.8px;
+        font-weight: 700;
+        border-radius: 55px;
+        transition: all 1s; }
+      .wrapper .promo .promo_wrapper .promo_wrapper__btn:hover {
+        cursor: pointer;
+        background-color: #458FF6;
+        color: #ffffff; }
