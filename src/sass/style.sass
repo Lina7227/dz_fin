@@ -8,8 +8,8 @@
         align-items: center
         height: 100px
         margin-top: 56px 
-        margin-left: 190px
-        margin-right: 190px
+        margin-left: 8%
+        margin-right: 8%
         margin-bottom: 10px
         font-family: $default_font
         .logo 
@@ -33,7 +33,9 @@
                 font-weight: 700
     .promo
         height: 580px
-        margin:  10px 160px 10px 0
+        margin-top:  10px
+        margin-bottom: 10px 
+        margin-right: 7%
         background-image: url("../img/promo_1.svg")
         background-repeat: no-repeat
         background-position: 100%
@@ -47,7 +49,7 @@
         .promo_wrapper
             color: white
             width: 43%
-            margin-left: 190px
+            margin-left: 8%
             .promo_wrapper__title
                 font-size: 48px
                 font-weight: 700
@@ -76,6 +78,474 @@
                 cursor: pointer
                 background-color: $blue_color
                 color:  $white_color
+.feature
+    height: 1133px
+    margin:  5px 0 5px 0
+    background-image: url("../img/fon.png")
+    background-repeat: no-repeat
+    background-position: left
+    background-size: 1300px 960px
+    font-family: $default_font
+    .feature_heading
+        margin-top: 120px
+        // margin-left: 12%
+        height: 180px
+        .feature_heading__h3
+            color: $black_color
+            font-size: 36px
+            font-weight: 700
+            line-height: 56px
+            text-align: center
+        .img
+            background-image: url("../img/line_2.svg")
+            background-repeat: no-repeat
+            margin-left: 47% 
+            width: 200px
+            height: 20px
+        .feature_heading__h5
+            font-size: 18px
+            font-weight: 300
+            line-height: 30px
+            color: $gray_color
+            text-align: center
+    .feature_cards
+        display: grid
+        gap: 34px
+        grid-template-columns: repeat(3, 300px)
+        grid-template-rows: repeat(2, 310px)
+        justify-content: center
+        margin-left: 10%
+        margin-right: 10%
+        margin-top: 80px
+        margin-bottom: 60px
+        text-align: center
+        .feature_card
+            background-repeat: no-repeat
+            background-size: contain
+            justify-content: center
+            border-radius: 20px
+            background-color: $white_color
+            box-shadow: 0 0 20px $blik_color
+            .feature_card__img
+                height: 100px
+                width: 100px
+                margin: 30px 0 0 23px
+                background-repeat: no-repeat
+                justify-content: center
+                background-position: left
+                .feature_card__img_1
+                    background-image: url("../img/card_1.svg")
+                    height: 90px
+                    width: 91px
+                .feature_card__img_2
+                    background-image: url("../img/card_2.svg")
+                    height: 85px
+                    width: 61px
+                .feature_card__img_3
+                    background-image: url("../img/card_3.svg")
+                    height: 95px
+                    width: 67px
+                .feature_card__img_4
+                    background-image: url("../img/card_4.svg")
+                    height: 95px
+                    width: 67px
+                .feature_card__img_5
+                    background-image: url("../img/card_5.svg")
+                    height: 71px
+                    width: 80px
+                .feature_card__img_6
+                    background-image: url("../img/card_6.svg")
+                    height: 97px
+                    width: 69px
+            .feature_card__h4
+                margin: 20px 0 0 20px
+                color: $black_color
+                font-size: 24px
+                font-weight: 700
+                text-align: left
+            .feature_card__p
+                margin-left: 20px
+                margin-right: 20px
+                color: $gray_color
+                font-weight: 300
+                font-size: 16px 
+                text-align: left
+                line-height: 28px
+    .feature__btn
+        color: $blue_color
+        font-size: 18px
+        width: 200px
+        height: 56px
+        background-color: $white_color
+        border: 1px solid $blue_color
+        letter-spacing: 0.8px
+        font-weight: 700
+        border-radius: 55px
+        transition: all 1s
+        margin-left: 43%
+    .feature__btn:hover 
+        cursor: pointer
+        background-color: $blue_color
+        color:  $white_color
+.promo_2
+    height: 450px
+    margin-top: 110px 
+    margin-left: 6%
+    margin-right: 7%
+    background-image: url("../img/promo_2.svg")
+    background-repeat: no-repeat
+    background-position: 6%
+    background-size: 590px 380px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    font-family: $default_font
+    .promo_2_wrapper
+        width: 43%
+        // margin-left: 190px
+        .promo_2_wrapper__title
+            font-size: 36px
+            font-weight: 700
+            letter-spacing: 1px
+            line-height: 50px
+            color: $black_color
+        .img
+            background-image: url("../img/line_2.svg")
+            background-repeat: no-repeat
+            width: 200px
+            height: 20px
+        .promo_2_wrapper__text
+            font-size: 18px
+            letter-spacing: 0.6px
+            font-weight: 300
+            margin-bottom: 35px
+            line-height: 30px
+            color: $gray_color
+        .promo_2_wrapper__btn 
+            color: $blue_color
+            font-size: 18px
+            width: 200px
+            height: 56px
+            background-color: $white_color
+            border: 1px solid $blue_color
+            letter-spacing: 0.8px
+            font-weight: 700
+            border-radius: 55px
+            transition: all 1s
+        .promo_2_wrapper__btn:hover 
+            cursor: pointer
+            background-color: $blue_color
+            color:  $white_color
+.promo_3
+    height: 680px
+    margin-top: 5px 
+    margin-left: 10%
+    font-family: $default_font
+    .img_kyb
+        background-image: url("../img/kyb.svg")
+        width: 90px
+        height: 115px
+        margin-left: 92%
+    .wrap
+        background-image: url("../img/promo_3.svg")
+        background-repeat: no-repeat
+        background-position: 100%
+        background-size: 580px 370px
+        margin-right: 8%
+        height: 434px
+        .promo_3_wrapper
+            width: 43%
+            .promo_3_wrapper__title
+                font-size: 36px
+                font-weight: 700
+                letter-spacing: 1px
+                line-height: 48px
+                color: $black_color
+            .img_line
+                background-image: url("../img/line_2.svg")
+                background-repeat: no-repeat
+                width: 200px
+                height: 20px
+            .promo_3_wrapper__text
+                font-size: 18px
+                letter-spacing: 0.6px
+                font-weight: 300
+                margin-bottom: 35px
+                line-height: 30px
+                color: $gray_color
+            .promo_3_wrapper__btn 
+                color: $blue_color
+                font-size: 18px
+                width: 200px
+                height: 56px
+                background-color: $white_color
+                border: 1px solid $blue_color
+                letter-spacing: 0.8px
+                font-weight: 700
+                border-radius: 55px
+                transition: all 1s
+            .promo_3_wrapper__btn:hover 
+                cursor: pointer
+                background-color: $blue_color
+                color:  $white_color
+.swiper
+    height: 510px
+    background-image: url("../img/fon_2.png")
+    background-repeat: no-repeat
+    .swiper-container
+        width: 85%
+        .swiper-wrapper
+            // margin-left: 8%
+            margin-right: 8%
+            .swiper-slide
+                background-color: $blue_color
+                width:  80%
+                height:  425px
+                border-radius: 24px
+                color: $white_color
+                .slide_h2
+                    font-size: 36px
+                    font-weight: 700
+                    line-height: 48px
+                    text-align: center
+                    margin-top: 20px
+                .img_line
+                    background-color: #fff
+                    margin-left: 45%
+                    width: 150px
+                    height: 1px
+                .blok
+                    display: flex
+                    justify-content: space-around
+                    // align-items: flex-start
+                    .img_man
+                        background-image: url(../img/man.svg)
+                        background-repeat: no-repeat
+                        background-position: left
+                        width: 141px
+                        height: 141px
+                        margin-top: 35px  
+                        margin-left: 8%
+                    .text_slide
+                        display: flex
+                        flex-direction: column
+                        height: 100px
+                        width: 320px
+                        margin-top: 75px
+                        margin-left: 10px
+                        text-align: left
+                        .slide_h3
+                            font-size: 22px
+                            font-weight: 700
+                            line-height: 48px
+                            margin: 0 auto
+                        .slide_h4
+                            font-size: 18px
+                            font-weight: 400
+                            line-height: 48px
+                            margin: 0 auto
+                    .slide_p
+                        height: 120px
+                        width: 420px 
+                        margin-top: 70px  
+                        font-size: 19px
+                        font-weight: 400
+                        line-height: 30px
+        .swiper-button-next
+            color: $white_color
+        .swiper-button-next:hover
+            color: $blik_color
+        .swiper-button-prev
+            color: $white_color
+        .swiper-button-prev:hover
+            color: $blik_color
+        .swiper-pagination-bullet    
+            background-color: $white_color
+.article
+    display: flex
+    justify-content: center
+    flex-direction: column
+    background-image: url("../img/fon_3.png")
+    background-repeat: no-repeat
+    margin-left: 9%
+    margin-top: 130px
+    height: 990px
+    font-family: $default_font
+    .article_h3
+        color: $black_color
+        font-size: 36px
+        font-weight: 700
+        line-height: 56px
+        text-align: center
+        margin-top: 0
+    .img_line
+        background-image: url("../img/line_2.svg")
+        background-repeat: no-repeat
+        margin-left: 47% 
+        width: 200px
+        height: 20px
+    .article_cards
+        display: grid
+        gap: 30px
+        grid-template-columns: repeat(3,350px)
+        justify-content: center
+        font-family: $default_font
+        margin-bottom: 60px
+        margin-top: 30px
+        margin-right: 10%
+        height: 512px
+        .article_card
+            display: grid
+            grid-template-rows: 220px 80px 110px 80px
+            border-radius: 20px
+            box-shadow: 0 0 20px $blik_color
+            background-color: $white_color
+            .article_card__img_1
+                background-image: url("../img/art_1.svg")
+                height: 220px
+                border-radius: 20px 20px 0 0
+            .article_card__img_2
+                background-image: url("../img/art_2.svg")
+                height: 220px
+                border-radius: 20px 20px 0 0
+            .article_card__img_3
+                background-image: url("../img/art_3.svg")
+                height: 220px
+                border-radius: 20px 20px 0 0
+            .article_card__h5
+                display: flex
+                font-size: 21px
+                line-height: 32px
+                font-weight: 700
+                margin-left: 32px
+                margin-right: 50px
+            .article_card__p
+                font-weight: 300
+                font-size: 16px
+                margin: 26px 50px 0 32px
+                line-height: 28px
+                color: $gray_color
+            .article_card__link
+                margin: 28px 32px 0 32px
+                text-decoration: none
+                color: $sin_color
+    .article__btn
+        color: $blue_color
+        font-size: 18px
+        width: 200px
+        height: 56px
+        background-color: $white_color
+        border: 1px solid $blue_color
+        letter-spacing: 0.8px
+        font-weight: 700
+        border-radius: 55px
+        transition: all 1s
+        margin-left: 38%
+    .article__btn:hover 
+        cursor: pointer
+        background-color: $blue_color
+        color:  $white_color
+    .img_kyb
+        background-image: url("../img/kyb.svg")
+        margin-left: 82%
+        width: 130px
+        height: 80px
+        margin-top: 120px
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: $default_font
+    color: $white_color
+    background-image: url("../img/bg.jpg")
+    background-repeat: no-repeat
+    height: 440px
+    .footer_business
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-direction: column
+        width: 40%
+        margin-top: 90px
+        .footer_business__logo
+            background-image: url("../img/logo_1.svg")
+            height: 41px
+            width: 160px
+            background-repeat: no-repeat
+            background-size: contain
+            margin-left: 20%
+        .footer_business__h5
+            font-size: 18px
+            font-weight: 300
+            line-height: 28px
+            margin-bottom: 30px
+            margin-left: 20%
+        .footer_business__p
+            font-size: 18px
+            font-weight: 300
+            line-height: 28px
+            margin-left: 20%
+        .img_kyb
+            background-image: url("../img/kyb.svg")
+            width: 90px
+            height: 80px
+    .footer_bloks
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 90px
+        margin-bottom: 120px
+        width: 55%
+        .nav_blok
+            display: flex
+            justify-content: flex-start
+            flex-direction: column
+            margin-right: 10%
+            height: 220px
+            .nav_h4
+                font-size: 20px
+                font-weight: 700
+                line-height: 60px
+                margin-bottom: 3px
+                margin-top: 5px
+                text-align: left
+            .nav__Link 
+                font-size: 18px
+                font-weight: 300
+                line-height: 38px
+                margin-bottom: 2px
+                color: $white_color
+                text-decoration: none
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+                           
+                    
+
+                    
+                        
+        
+
+
+                
+
+            
+
     
+    
+        
+
+
 
 
