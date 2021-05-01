@@ -2,6 +2,9 @@
 
 .wrapper
     margin: 0 auto
+    @media all and (max-width: 420px)
+        display: flex
+        flex-direction: column
     .header 
         display: flex
         justify-content: space-between
@@ -12,16 +15,26 @@
         margin-right: 8%
         margin-bottom: 10px
         font-family: $default_font
+        @media all and (max-width: 420px)
+            width: 96%
+            height: 80px
+            margin: 3px 6px 0 6px
         .logo 
             background-image: url("../img/logo.svg")
             height: 41px
             width: 160px
             background-repeat: no-repeat
             background-size: contain
+            @media all and (max-width: 420px)
+                height: 32px
+                width: 140px
+                margin-left: 10px
         .nav 
             display: flex
             width: 55%
             justify-content: space-around
+            @media all and (max-width: 420px)
+                display: none
             .nav__Link 
                 font-size: 18px
                 color: $gray_color
@@ -31,6 +44,32 @@
             .nav__Link:hover 
                 color: $dark_color
                 font-weight: 700
+        .burger 
+            display: none
+            @media all and (max-width: 420px)
+                display: flex
+                flex-direction: column
+                width: 40px
+                height: 40px
+                justify-content: space-between
+                margin-right: 23px
+                cursor: pointer
+            .burger_div
+                @media all and (max-width: 420px)
+                    height: 3px
+                    width: 100%
+                    background-color: $gray_color
+    .nav_mobile 
+        display: none
+        @media all and (max-width: 420px)
+            display: flex
+            flex-direction: column
+            height: 10em
+            justify-content: center
+            align-self: center
+        .nav_mobile a
+            @media all and (max-width: 420px)
+                margin-top: 20px
     .promo
         height: 580px
         margin-top:  10px
@@ -41,21 +80,42 @@
         background-position: 100%
         background-size: 550px 500px
         font-family: $default_font
+        @media all and (max-width: 420px)
+            width: 96%
+            height: 500px
+            display: flex
+            flex-direction: column
+            margin: 0
+            background-size: 380px 320px
         .img
             background-image: url("../img/kyb.svg")
             width: 90px
             height: 115px
             background-position: left
+            @media all and (max-width: 420px)
+                display: none
         .promo_wrapper
             color: white
             width: 43%
             margin-left: 8%
+            @media all and (max-width: 420px)
+                display: flex
+                align-items: center
+                flex-direction: column
+                width: 100%
+                margin-left: 1.5%
+                margin-right: 1.5%
             .promo_wrapper__title
                 font-size: 48px
                 font-weight: 700
                 letter-spacing: 1px
                 line-height: 56px
                 color: $black_color
+                @media all and (max-width: 420px)
+                    margin-top: 430px
+                    font-size: 30px
+                    line-height: 40px
+                    text-align: center
             .promo_wrapper__text
                 font-size: 21px
                 letter-spacing: 0.6px
@@ -63,6 +123,11 @@
                 margin-bottom: 45px
                 line-height: 32px
                 color: $gray_color
+                @media all and (max-width: 420px)
+                    margin-bottom: 20px
+                    font-size: 15px
+                    line-height: 23px
+                    text-align: left
             .promo_wrapper__btn 
                 color: $blue_color
                 font-size: 18px
@@ -86,16 +151,25 @@
     background-position: left
     background-size: 1300px 960px
     font-family: $default_font
+    @media all and (max-width: 420px)
+        margin-top: 250px
+        height: 630px
+        width: 100%
     .feature_heading
         margin-top: 120px
         // margin-left: 12%
         height: 180px
+        @media all and (max-width: 420px)
+            height: 70px
         .feature_heading__h3
             color: $black_color
             font-size: 36px
             font-weight: 700
             line-height: 56px
             text-align: center
+            @media all and (max-width: 420px)
+                font-size: 30px
+                line-height: 40px
         .img
             background-image: url("../img/line_2.svg")
             background-repeat: no-repeat
@@ -108,17 +182,24 @@
             line-height: 30px
             color: $gray_color
             text-align: center
+            @media all and (max-width: 420px)
+                display: none
     .feature_cards
         display: grid
         gap: 34px
         grid-template-columns: repeat(3, 300px)
         grid-template-rows: repeat(2, 310px)
         justify-content: center
-        margin-left: 10%
-        margin-right: 10%
-        margin-top: 80px
+        margin-top: 60px
         margin-bottom: 60px
         text-align: center
+        @media all and (max-width: 420px)
+            grid-template-columns: repeat(6, 250px)
+            grid-template-rows: repeat(1, 310px)
+            justify-content: start
+            overflow-x: scroll
+            overflow-y: hidden
+            // max-height: 320px
         .feature_card
             background-repeat: no-repeat
             background-size: contain
@@ -183,6 +264,8 @@
         border-radius: 55px
         transition: all 1s
         margin-left: 43%
+        @media all and (max-width: 420px)
+            margin-left: 25%
     .feature__btn:hover 
         cursor: pointer
         background-color: $blue_color
@@ -200,20 +283,40 @@
     justify-content: flex-end
     align-items: center
     font-family: $default_font
+    @media all and (max-width: 420px)
+        justify-content: center
+        flex-direction: column
+        margin-top: 10px
+        width: 96%
+        height: 450px
+        margin-right: 0
+        margin-left: 0
+        background-size: 380px 360px
     .promo_2_wrapper
         width: 43%
-        // margin-left: 190px
+        @media all and (max-width: 420px)
+            width: 100%
+            display: flex
+            justify-content: center
+            flex-direction: column
         .promo_2_wrapper__title
             font-size: 36px
             font-weight: 700
             letter-spacing: 1px
             line-height: 50px
             color: $black_color
+            @media all and (max-width: 420px)
+                font-size: 30px
+                line-height: 40px
+                text-align: center
+                margin-top: 710px
         .img
             background-image: url("../img/line_2.svg")
             background-repeat: no-repeat
             width: 200px
             height: 20px
+            @media all and (max-width: 420px)
+                margin-left: 45%
         .promo_2_wrapper__text
             font-size: 18px
             letter-spacing: 0.6px
@@ -221,6 +324,11 @@
             margin-bottom: 35px
             line-height: 30px
             color: $gray_color
+            @media all and (max-width: 420px)
+                font-size: 16px
+                line-height: 26px
+                text-align: center
+                margin-bottom: 20px
         .promo_2_wrapper__btn 
             color: $blue_color
             font-size: 18px
@@ -232,6 +340,7 @@
             font-weight: 700
             border-radius: 55px
             transition: all 1s
+            margin-left: 25%
         .promo_2_wrapper__btn:hover 
             cursor: pointer
             background-color: $blue_color
@@ -241,11 +350,21 @@
     margin-top: 5px 
     margin-left: 10%
     font-family: $default_font
+    @media all and (max-width: 420px)
+        justify-content: center
+        flex-direction: column
+        margin-top: 300px
+        width: 96%
+        height: 450px
+        margin-right: 0
+        margin-left: 0
     .img_kyb
         background-image: url("../img/kyb.svg")
         width: 90px
         height: 115px
         margin-left: 92%
+        @media all and (max-width: 420px)
+            display: none 
     .wrap
         background-image: url("../img/promo_3.svg")
         background-repeat: no-repeat
@@ -253,19 +372,35 @@
         background-size: 580px 370px
         margin-right: 8%
         height: 434px
+        @media all and (max-width: 420px)
+            background-position: center
+            background-size: 380px 300px
+            margin: 0
         .promo_3_wrapper
             width: 43%
+            @media all and (max-width: 420px)
+                width: 100%
+                display: flex
+                justify-content: center
+                flex-direction: column
             .promo_3_wrapper__title
                 font-size: 36px
                 font-weight: 700
                 letter-spacing: 1px
                 line-height: 48px
                 color: $black_color
+                @media all and (max-width: 420px)
+                    font-size: 30px
+                    line-height: 40px
+                    text-align: center
+                    margin-top: 360px
             .img_line
                 background-image: url("../img/line_2.svg")
                 background-repeat: no-repeat
                 width: 200px
                 height: 20px
+                @media all and (max-width: 420px)
+                    margin-left: 45%
             .promo_3_wrapper__text
                 font-size: 18px
                 letter-spacing: 0.6px
@@ -273,6 +408,11 @@
                 margin-bottom: 35px
                 line-height: 30px
                 color: $gray_color
+                @media all and (max-width: 420px)
+                    font-size: 16px
+                    line-height: 26px
+                    text-align: center
+                    margin-bottom: 20px
             .promo_3_wrapper__btn 
                 color: $blue_color
                 font-size: 18px
@@ -284,6 +424,7 @@
                 font-weight: 700
                 border-radius: 55px
                 transition: all 1s
+                margin-left: 25%
             .promo_3_wrapper__btn:hover 
                 cursor: pointer
                 background-color: $blue_color
@@ -292,8 +433,12 @@
     height: 510px
     background-image: url("../img/fon_2.png")
     background-repeat: no-repeat
+    @media all and (max-width: 420px)
+        margin-top: 280px
     .swiper-container
         width: 85%
+        @media all and (max-width: 420px)
+            width: 90%
         .swiper-wrapper
             // margin-left: 8%
             margin-right: 8%
@@ -303,21 +448,31 @@
                 height:  425px
                 border-radius: 24px
                 color: $white_color
+                @media all and (max-width: 420px)
+                    height: 600px
                 .slide_h2
                     font-size: 36px
                     font-weight: 700
                     line-height: 48px
                     text-align: center
                     margin-top: 20px
-                .img_line
-                    background-color: #fff
+                    @media all and (max-width: 420px)
+                        font-size: 30px
+                        line-height: 40px
+                .line
+                    background-color: $white_color
                     margin-left: 45%
                     width: 150px
                     height: 1px
+                    @media all and (max-width: 420px)
+                        margin-left: 27%
                 .blok
                     display: flex
                     justify-content: space-around
                     // align-items: flex-start
+                    @media all and (max-width: 420px)
+                        justify-content: center
+                        flex-direction: column
                     .img_man
                         background-image: url(../img/man.svg)
                         background-repeat: no-repeat
@@ -326,6 +481,9 @@
                         height: 141px
                         margin-top: 35px  
                         margin-left: 8%
+                        @media all and (max-width: 420px)
+                            margin-left: 27%
+                            background-position: center
                     .text_slide
                         display: flex
                         flex-direction: column
@@ -334,16 +492,24 @@
                         margin-top: 75px
                         margin-left: 10px
                         text-align: left
+                        @media all and (max-width: 420px)
+                            text-align: center
+                            margin-top: 25px
                         .slide_h3
                             font-size: 22px
                             font-weight: 700
                             line-height: 48px
                             margin: 0 auto
+                            @media all and (max-width: 420px)
+                                font-size: 20px
+                                line-height: 30px
                         .slide_h4
                             font-size: 18px
                             font-weight: 400
                             line-height: 48px
                             margin: 0 auto
+                            @media all and (max-width: 420px)
+                                line-height: 36px
                     .slide_p
                         height: 120px
                         width: 420px 
@@ -351,6 +517,12 @@
                         font-size: 19px
                         font-weight: 400
                         line-height: 30px
+                        @media all and (max-width: 420px)
+                            width: 95%
+                            margin-top: 10px
+                            font-size: 16px
+                            line-height: 26px
+                            text-align: center
         .swiper-button-next
             color: $white_color
         .swiper-button-next:hover
@@ -371,6 +543,9 @@
     margin-top: 130px
     height: 990px
     font-family: $default_font
+    @media all and (max-width: 420px)
+        margin-left: 0
+        height: 1900px
     .article_h3
         color: $black_color
         font-size: 36px
@@ -378,12 +553,17 @@
         line-height: 56px
         text-align: center
         margin-top: 0
+        @media all and (max-width: 420px)
+            font-size: 30px
+            line-height: 40px
     .img_line
         background-image: url("../img/line_2.svg")
         background-repeat: no-repeat
         margin-left: 47% 
         width: 200px
         height: 20px
+        @media all and (max-width: 420px)
+            margin-left: 43%
     .article_cards
         display: grid
         gap: 30px
@@ -394,6 +574,12 @@
         margin-top: 30px
         margin-right: 10%
         height: 512px
+        @media all and (max-width: 420px)
+            grid-template-columns: 1fr
+            max-width: 410px
+            align-items: center
+            margin-left: 5%
+            margin-right: 5%
         .article_card
             display: grid
             grid-template-rows: 220px 80px 110px 80px
@@ -419,6 +605,8 @@
                 font-weight: 700
                 margin-left: 32px
                 margin-right: 50px
+                @media all and (max-width: 420px)
+                    font-size: 18px
             .article_card__p
                 font-weight: 300
                 font-size: 16px
@@ -441,6 +629,9 @@
         border-radius: 55px
         transition: all 1s
         margin-left: 38%
+        @media all and (max-width: 420px)
+            margin-top: 1000px
+            margin-left: 25%
     .article__btn:hover 
         cursor: pointer
         background-color: $blue_color
@@ -451,6 +642,8 @@
         width: 130px
         height: 80px
         margin-top: 120px
+        @media all and (max-width: 420px)
+            display: none
 .footer
     display: flex
     justify-content: space-between
@@ -460,6 +653,13 @@
     background-image: url("../img/bg.jpg")
     background-repeat: no-repeat
     height: 440px
+    @media all and (max-width: 420px)
+        justify-content: center
+        flex-direction: column
+        background-image: none
+        background-color: $blue_color
+        margin-top: 2px
+        height: 600px
     .footer_business
         display: flex
         justify-content: flex-start
@@ -467,6 +667,9 @@
         flex-direction: column
         width: 40%
         margin-top: 90px
+        @media all and (max-width: 420px)
+            margin-top: 5px
+            width: 98%
         .footer_business__logo
             background-image: url("../img/logo_1.svg")
             height: 41px
@@ -474,17 +677,28 @@
             background-repeat: no-repeat
             background-size: contain
             margin-left: 20%
+            @media all and (max-width: 420px)
+                margin-left: 30%
         .footer_business__h5
             font-size: 18px
             font-weight: 300
             line-height: 28px
             margin-bottom: 30px
             margin-left: 20%
+            @media all and (max-width: 420px)
+                margin-left: 4%
+                margin-bottom: 15px
+                font-size: 16px
+                text-align: center
         .footer_business__p
             font-size: 18px
             font-weight: 300
             line-height: 28px
             margin-left: 20%
+            @media all and (max-width: 420px)
+                font-size: 16px
+                text-align: center
+                margin-left: 4%
         .img_kyb
             background-image: url("../img/kyb.svg")
             width: 90px
@@ -496,12 +710,19 @@
         margin-top: 90px
         margin-bottom: 120px
         width: 55%
+        @media all and (max-width: 420px)
+            margin-top: 0
+            margin-bottom: 10px
+            width: 95%
         .nav_blok
             display: flex
             justify-content: flex-start
             flex-direction: column
             margin-right: 10%
             height: 220px
+            @media all and (max-width: 420px)
+                margin-right: 5%
+                margin-left: 5%
             .nav_h4
                 font-size: 20px
                 font-weight: 700
@@ -509,6 +730,9 @@
                 margin-bottom: 3px
                 margin-top: 5px
                 text-align: left
+                @media all and (max-width: 420px)
+                    font-size: 16px
+                    line-height: 46px
             .nav__Link 
                 font-size: 18px
                 font-weight: 300
@@ -516,6 +740,10 @@
                 margin-bottom: 2px
                 color: $white_color
                 text-decoration: none
+                @media all and (max-width: 420px)
+                    font-style: 16px
+                    line-height: 30px
+
 
 
 
