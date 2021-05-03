@@ -1,2 +1,2 @@
 ## запуск проекта ##
-'''npm i watch'''
+'''npm run watch'''

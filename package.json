@@ -4,7 +4,7 @@
   "description": "создать качественный проект",
   "main": "index.html",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "npm run watch"
   },
   "keywords": [
     "gulp_sass"
